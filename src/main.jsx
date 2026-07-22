@@ -50,7 +50,7 @@ createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <ErrorBoundary FallbackComponent={ErrorFallback}>
       <QueryClientProvider client={queryClient}>
-        <BrowserRouter>
+        <BrowserRouter basename="/tracker">
           <App />
         </BrowserRouter>
       </QueryClientProvider>
