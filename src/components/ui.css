@@ -1,0 +1,71 @@
+/* Button Component Styles */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 9999px;
+  font-weight: 500;
+  font-size: 0.95rem;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-primary {
+  background-color: var(--text-primary);
+  color: var(--bg-primary);
+}
+.btn-primary:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 14px rgba(0,0,0,0.1);
+}
+[data-theme='dark'] .btn-primary:hover {
+  box-shadow: 0 4px 14px rgba(255,255,255,0.1);
+}
+
+.btn-secondary {
+  background-color: var(--glass-bg);
+  color: var(--text-primary);
+  border: 1px solid var(--border);
+}
+.btn-secondary:hover {
+  background-color: var(--bg-secondary);
+  border-color: var(--text-secondary);
+}
+
+.btn-accent {
+  background: linear-gradient(135deg, var(--accent) 0%, #a855f7 100%);
+  color: white;
+}
+.btn-accent:hover {
+  box-shadow: 0 4px 14px rgba(168, 85, 247, 0.4);
+}
+
+.btn-icon {
+  padding: 0.5rem;
+  border-radius: 50%;
+  background-color: transparent;
+  color: var(--text-secondary);
+}
+.btn-icon:hover {
+  background-color: var(--glass-border);
+  color: var(--text-primary);
+}
+
+/* Card Component */
+.card {
+  position: relative;
+  background: var(--bg-secondary);
+  border-radius: 16px;
+  border: 1px solid var(--border);
+  overflow: hidden;
+}
+
+.card-glass {
+  background: var(--glass-bg);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
