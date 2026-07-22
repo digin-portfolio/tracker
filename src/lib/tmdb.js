@@ -80,7 +80,7 @@ const getMockSeason = (tvId, seasonNumber) => {
 };
 
 export const fetchFromTMDB = async (endpoint) => {
-  const apiKey = import.meta.env.VITE_TMDB_API_KEY;
+  const apiKey = import.meta.env.VITE_TMDB_API_KEY || '9a9c53620db722c1693223034acd306d';
   if (apiKey) {
     const url = new URL(`https://api.themoviedb.org/3${endpoint}`);
     url.searchParams.append('api_key', apiKey);
